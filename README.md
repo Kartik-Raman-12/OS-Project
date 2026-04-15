@@ -13,7 +13,7 @@ In standard file copying, a single process reads and writes data sequentially. T
 
 ##  Key Technical Features
 
-  * **Concurrency with Pthreads**: Managed execution of 6 parallel threads to maximize CPU utilization.
+  * **Concurrency with Pthreads**: Managed execution of 4 parallel threads to maximize CPU utilization.
   * **Low-Level System I/O**: Direct use of Linux system calls (`open`, `read`, `write`, `lseek`) for minimal overhead.
   * **Precise Offset Management**: Uses `lseek` to ensure threads do not overlap or overwrite data.
   * **Efficient Memory Management**: Implements a 64KB buffer per thread to balance RAM usage and I/O throughput.
